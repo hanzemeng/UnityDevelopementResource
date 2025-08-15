@@ -1,0 +1,231 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &738494796625287839
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 234431191200694223}
+  - component: {fileID: 6109684665101294129}
+  m_Layer: 0
+  m_Name: G3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &234431191200694223
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 738494796625287839}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 7750136417239026000}
+  m_Father: {fileID: 738462539997967898}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6109684665101294129
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 738494796625287839}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 082a22a6936694ed58ebed43bd6a1852, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stringArrayElementsStatic: SABER
+  stringArray:
+  - IMPACT
+  - SLASH
+  - PUNCTURE
+  - FIRE
+  - FREEZE
+  - ELECTRICITY
+  - POISON
+  stringArrayElements: IMPACT
+  enumMembersNames: EXPLOSION
+  buildScenesNames: SampleScene
+  material: {fileID: 0}
+  materialPropertiesNames: ERROR
+  animator: {fileID: 0}
+  animatorStatesNames: ERROR
+  animatorParametersNames: ERROR
+  typeFieldsNames: m_CancellationTokenSource
+  typePropertiesNames: destroyCancellationToken
+  typeEventsNames: NO_VALUE
+  typeMethodsNames: get_rigidbody2D
+  audioMixer: {fileID: 0}
+  audioMixerExposedParameters: ERROR
+  objectSerializedPropertiesNames: ERROR
+--- !u!1 &2065326255576854676
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7750136417239026000}
+  - component: {fileID: 4520131995324210634}
+  m_Layer: 0
+  m_Name: G0
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7750136417239026000
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2065326255576854676}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 234431191200694223}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4520131995324210634
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2065326255576854676}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 082a22a6936694ed58ebed43bd6a1852, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stringArrayElementsStatic: SABER
+  stringArray:
+  - IMPACT
+  - SLASH
+  - PUNCTURE
+  - FIRE
+  - FREEZE
+  - ELECTRICITY
+  - POISON
+  stringArrayElements: IMPACT
+  enumMembersNames: EXPLOSION
+  buildScenesNames: SampleScene
+  material: {fileID: 0}
+  materialPropertiesNames: ERROR
+  animator: {fileID: 0}
+  animatorStatesNames: ERROR
+  animatorParametersNames: ERROR
+  typeFieldsNames: m_CancellationTokenSource
+  typePropertiesNames: destroyCancellationToken
+  typeEventsNames: NO_VALUE
+  typeMethodsNames: get_destroyCancellationToken
+  audioMixer: {fileID: 0}
+  audioMixerExposedParameters: ERROR
+  objectSerializedPropertiesNames: ERROR
+--- !u!1 &4041092011463332753
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 738462539997967898}
+  - component: {fileID: 2177115671317155623}
+  - component: {fileID: 8744940105308393382}
+  m_Layer: 0
+  m_Name: Test_Script
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &738462539997967898
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4041092011463332753}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 234431191200694223}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2177115671317155623
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4041092011463332753}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 082a22a6936694ed58ebed43bd6a1852, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stringArrayElementsStatic: SABER
+  stringArray:
+  - IMPACT
+  - SLASH
+  - PUNCTURE
+  - FIRE
+  - FREEZE
+  - ELECTRICITY
+  - POISON
+  stringArrayElements: IMPACT
+  enumMembersNames: EXPLOSION
+  buildScenesNames: SampleScene
+  material: {fileID: 2100000, guid: 106f3ff43a17d4967a2b64c7a92e49ec, type: 2}
+  materialPropertiesNames: ERROR
+  animator: {fileID: 8744940105308393382}
+  animatorStatesNames: Idle,0
+  animatorParametersNames: Fly Forward
+  typeFieldsNames: m_CancellationTokenSource
+  typePropertiesNames: destroyCancellationToken
+  typeEventsNames: NO_VALUE
+  typeMethodsNames: get_destroyCancellationToken
+  audioMixer: {fileID: 0}
+  audioMixerExposedParameters: ERROR
+  objectSerializedPropertiesNames: ERROR
+--- !u!95 &8744940105308393382
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4041092011463332753}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 095a208ca01924ab5ac57cef04d0adb8, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
