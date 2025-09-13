@@ -23,25 +23,34 @@ public class StringPopupAttributeDrawer : PropertyDrawer
             oldIndex = 0;
             if(null != oldStr && 0 != oldStr.Length)
             {
-                Component component = property.serializedObject.targetObject as Component;
-                GameObject gameObject = component.gameObject;
-
-                StringBuilder stringBuilder = new StringBuilder();
-                Transform cur = gameObject.transform;
-                while(null != cur)
+                if(property.serializedObject.targetObject is Component)
                 {
-                    stringBuilder.Insert(0, $"{cur.name}/");
-                    cur = cur.parent;
-                }
+                    Component component = property.serializedObject.targetObject as Component;
+                    GameObject gameObject = component.gameObject;
 
-                string componentPath = $"{stringBuilder}{component.GetType()}";
-                string objectPath = gameObject.scene.path;
-                if(null == objectPath || 0 == objectPath.Length) // a prefab asset
+                    StringBuilder stringBuilder = new StringBuilder();
+                    Transform cur = gameObject.transform;
+                    while(null != cur)
+                    {
+                        stringBuilder.Insert(0, $"{cur.name}/");
+                        cur = cur.parent;
+                    }
+
+                    string componentPath = $"{stringBuilder}{component.GetType()}";
+                    string objectPath = gameObject.scene.path;
+                    if(null == objectPath || 0 == objectPath.Length) // a prefab asset
+                    {
+                        objectPath = gameObject.scene.name + ".prefab";
+                    }
+
+                    Debug.LogWarning($"In {objectPath}, component {componentPath}, property {label.text}.\nIts value has been changed from \"{oldStr}\" to \"{options[oldIndex]}\".");
+                }
+                else if(property.serializedObject.targetObject is ScriptableObject)
                 {
-                    objectPath = gameObject.scene.name + ".prefab";
+                    ScriptableObject scriptableObject = property.serializedObject.targetObject as ScriptableObject;
+                    string objectPath = AssetDatabase.GetAssetPath(scriptableObject);
+                    Debug.LogWarning($"In {objectPath}, property {label.text}.\nIts value has been changed from \"{oldStr}\" to \"{options[oldIndex]}\".");
                 }
-
-                Debug.LogWarning($"In {objectPath}, component {componentPath}, property {label.text}.\nIts value has been changed from \"{oldStr}\" to \"{options[oldIndex]}\".");
             }
         }
 
